@@ -67,3 +67,4 @@
                 const audioBlob = new Blob(audioChunks, { 'type': 'audio/mp3' });
                 const audioUrl = URL.createObjectURL(audioBlob);
                 document.getElementById('downloadLink').href = audioUrl;
+                document.getElementById('downloadLink').style.display = 'block';
