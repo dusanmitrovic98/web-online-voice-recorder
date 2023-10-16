@@ -76,3 +76,4 @@
         function stopRecording() {
             mediaRecorder.stop();
             audioStream.getTracks()[0].stop();
+            document.getElementById('startButton').style.display = 'block';
