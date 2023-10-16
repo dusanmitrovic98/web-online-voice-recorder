@@ -64,3 +64,4 @@
             mediaRecorder.onstop = function () {
                 document.getElementById('startButton').style.display = 'none';
                 document.getElementById('stopButton').style.display = 'none';
+                const audioBlob = new Blob(audioChunks, { 'type': 'audio/mp3' });
