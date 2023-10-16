@@ -56,3 +56,4 @@
             mediaRecorder = new MediaRecorder(audioStream);
 
             mediaRecorder.ondataavailable = function (e) {
+                if (e.data.size > 0) {
